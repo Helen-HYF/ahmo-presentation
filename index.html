@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta
+      name="apple-mobile-web-app-status-bar-style"
+      content="black-translucent"
+    />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>reveal.js</title>
+
+    <link rel="stylesheet" href="dist/reset.css" />
+    <link rel="stylesheet" href="dist/reveal.css" />
+    <link rel="stylesheet" href="dist/theme/custom.css" />
+    <link rel="stylesheet" href="dist/custom.css" />
+    <!-- Theme used for syntax highlighted code -->
+    <link rel="stylesheet" href="plugin/highlight/monokai.css" />
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        <section
+          data-background-color="rgba(88,110,224, 0.5)"
+          data-background-gradient="linear-gradient(90deg,rgba(88,110,224, .06),rgba(88,110,224, 0)),linear-gradient(90deg,rgba(255,255,255,0.2),rgba(255,255,255,0))"
+          data-background-transition="convex"
+        >
+          <img
+            style="
+              height: 180px;
+              margin: 0 auto 0rem auto;
+              background: transparent;
+            "
+            class="demo-logo"
+            src="./assets/ahmo-logo.png"
+            alt="member"
+          />
+          <h2>Welcome to AHMO Chat</h2>
+          <div class="cards">
+            <div class="card fragment">
+              <img
+                width="70"
+                height="70"
+                src="https://ca.slack-edge.com/T91PPTG9H-U03P2CLD6CC-2aa053551020-512"
+                alt="member"
+              />
+              <div class="description">
+                <small>Azima</small>
+                <small class="xs">UX UI designer</small>
+              </div>
+            </div>
+            <div class="card fragment">
+              <img
+                width="70"
+                height="70"
+                style="border-radius: 50%"
+                src="https://ca.slack-edge.com/T91PPTG9H-U03P3PK90LC-b14c5c9d9490-512"
+                alt="member"
+              />
+              <div class="description">
+                <small>Hayko</small>
+                <small class="xs">UX UI designer</small>
+              </div>
+            </div>
+            <div class="card fragment">
+              <img
+                width="70"
+                height="70"
+                style="border-radius: 50%"
+                src="https://ca.slack-edge.com/T91PPTG9H-U03P0EEEZ4J-78c4787801ba-512"
+                alt="member"
+              />
+              <div class="description">
+                <small>Michael</small>
+                <small class="xs">UX and backend</small>
+              </div>
+            </div>
+            <div class="card fragment">
+              <img
+                width="70"
+                height="70"
+                style="border-radius: 50%"
+                src="https://ca.slack-edge.com/T91PPTG9H-U03PSC3LF6F-94f176814637-512"
+                alt="member"
+              />
+              <div class="description">
+                <small>Oleksii</small>
+                <small class="xs">Teamlead, fullstack</small>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section
+          data-vertical-center="false"
+          data-horizontal-center="false"
+          data-background-transition="convex"
+        >
+          <section data-auto-animate>
+            <div data-id="problem">
+              <h1 class="problems-title">Problems</h1>
+              <p>What is chat apps now?</p>
+              <ul class="problem_list">
+                <li class="fragment" data-fragment-index="1">Communication</li>
+                <li class="fragment" data-fragment-index="3">
+                  <span class="fragment highlight-green">Engagement</span>
+                </li>
+                <li class="fragment" data-fragment-index="2">Productivity</li>
+              </ul>
+            </div>
+          </section>
+          <section data-auto-animate>
+            <div data-id="problem">
+              <h1 class="problems-title" style="color: #1f4851">Problems</h1>
+              <div class="wrapper">
+                <div class="problem-item">
+                  <h3 class="secondary">Missing Fun Factor</h3>
+                  <p>
+                    Most chat apps focus on productivity and planning, but lack
+                    features that make chatting fun and engaging.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section data-auto-animate>
+            <div data-id="problem">
+              <h1 class="problems-title" style="color: #ffc700">Problems</h1>
+              <div class="wrapper">
+                <div class="problem-item">
+                  <h3 class="secondary">Isolation</h3>
+                  <p>
+                    With the pandemic, people feel more isolated than ever.
+                    Traditional chat apps may not be enough to fill the void of
+                    social interaction.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section data-auto-animate>
+            <div data-id="problem">
+              <h1 class="problems-title" style="color: #23b1d0">Problems</h1>
+              <div class="wrapper">
+                <div class="problem-item">
+                  <h3 class="secondary">Boredom</h3>
+                  <p>
+                    People can easily get bored with repetitive conversations.
+                    Adding games and interactive features can make chatting more
+                    interesting and engaging.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </section>
+        </section>
+        <section>
+          <section
+            data-auto-animate
+            data-background-color="white"
+            data-background-transition="convex"
+          >
+            <h1 data-id="about">
+              What is <span class="secondary">AHMO chat</span>?
+            </h1>
+            <div class="r-stack">
+              <div class="fragment current-visible" data-fragment-index="1">
+                <img src="./assets/direct.png" width="700" alt="chats" />
+                <p class="fragment" data-fragment-index="1">Chats</p>
+              </div>
+              <div class="fragment current-visible" data-fragment-index="2">
+                <img src="./assets/group.avif" width="400" alt="groups" />
+                <p class="fragment" data-fragment-index="2">Groups</p>
+              </div>
+              <div class="fragment" data-fragment-index="3">
+                <img src="./assets/game.avif" width="300" alt="games" />
+                <p class="fragment" data-fragment-index="3">Games</p>
+              </div>
+            </div>
+          </section>
+        </section>
+        <section>
+          <section data-auto-animate>
+            <h1 data-id="persona">Our user</h1>
+            <p></p>
+          </section>
+          <section data-auto-animate>
+            <h1 data-id="persona">Our user</h1>
+          </section>
+          <section data-auto-animate>
+            <h1 data-id="persona">Our user</h1>
+          </section>
+        </section>
+        <section
+          data-background-iframe="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2F5hAwhjvdOt5trxv7nuqVxT%2FAhmo-design%3Fnode-id%3D0%253A1%26t%3DJxdE1KayA1CSXwXd-1"
+          data-background-interactive
+        ></section>
+      </div>
+    </div>
+
+    <script src="dist/reveal.js"></script>
+    <script src="plugin/zoom/zoom.js"></script>
+    <script src="plugin/notes/notes.js"></script>
+    <script src="plugin/search/search.js"></script>
+    <script src="plugin/markdown/markdown.js"></script>
+    <script src="plugin/highlight/highlight.js"></script>
+    <script>
+      // More info about initialization & config:
+      // - https://revealjs.com/initialization/
+      // - https://revealjs.com/config/
+      Reveal.initialize({
+        controls: true,
+        progress: true,
+        center: true,
+        hash: true,
+
+        // Learn about plugins: https://revealjs.com/plugins/
+        plugins: [RevealMarkdown, RevealHighlight, RevealNotes],
+      });
+    </script>
+  </body>
+</html>

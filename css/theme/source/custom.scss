@@ -1,0 +1,134 @@
+/**
+ * Black theme for reveal.js. This is the opposite of the 'white' theme.
+ *
+ * By Hakim El Hattab, http://hakim.se
+ */
+
+// Default mixins and settings -----------------
+@import "../template/mixins";
+@import "../template/settings";
+// ---------------------------------------------
+
+// Include theme-specific fonts
+@import url(./fonts/source-sans-pro/source-sans-pro.css);
+
+// Override theme settings (see ../template/settings.scss)
+$backgroundColor: #120428;
+
+$mainColor: #fff;
+$headingColor: #fff;
+$blue: #23b1d0;
+
+$mainFontSize: 20px;
+$mainFont: "Source Sans Pro", Helvetica, sans-serif;
+$headingFont: "Source Sans Pro", Helvetica, sans-serif;
+$headingTextShadow: none;
+$headingLetterSpacing: normal;
+$headingTextTransform: uppercase;
+$headingFontWeight: 600;
+$linkColor: #f3fb8c;
+$linkColorHover: lighten($linkColor, 15%);
+$selectionBackgroundColor: rgba($linkColor, 0.75);
+
+$heading1Size: 2.5em;
+$heading2Size: 1.6em;
+$heading3Size: 1.3em;
+$heading4Size: 1em;
+
+// Change text colors against light slide backgrounds
+@include light-bg-text-color(#484153);
+
+// Theme template ------------------------------
+@import "../template/theme";
+// ---------------------------------------------
+
+.cards {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.description {
+  padding: 0 !important;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+}
+
+.card img {
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+small {
+  vertical-align: baseline;
+  text-align: left;
+  color: $linkColor;
+}
+
+.xs {
+  font-size: 0.4rem !important;
+  line-height: normal !important;
+}
+
+.subtitle {
+  font-size: 24px !important;
+}
+
+.text {
+  font-size: 20px;
+}
+
+.title {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.problem_list {
+  display: flex !important;
+  list-style: none !important;
+  justify-content: center !important;
+  align-items: center !important;
+  li {
+    margin-right: 20px;
+    font-size: 24px;
+  }
+}
+
+.problems-title {
+  text-align: start;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  .problem-item {
+    max-width: 600px;
+  }
+}
+
+.secondary {
+  color: $blue !important;
+}
+
+.about-items-wrapper {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  .about-items {
+    display: flex !important;
+    max-width: 400px;
+    p {
+      margin-right: 20px !important;
+    }
+  }
+}
