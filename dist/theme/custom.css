@@ -445,3 +445,37 @@ small {
 .about-items-wrapper .about-items p {
   margin-right: 20px !important;
 }
+
+.persona-item {
+  display: flex !important;
+  margin-bottom: 20px;
+  align-items: center;
+}
+.persona-item .info {
+  margin-left: 20px;
+  display: block;
+  text-align: left;
+}
+
+.help-item {
+  display: flex !important;
+  justify-content: space-between;
+}
+.help-item p {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  padding: 10px;
+}
+.help-item p:first-child {
+  margin-right: 20px;
+}
+
+.choices {
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+}
+.choices .choice {
+  width: 150px !important;
+  height: 150px !important;
+}
